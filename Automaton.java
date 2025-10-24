@@ -59,7 +59,7 @@ public class Automaton
     }
     
     private int calculateNextState(int l, int c, int r){
-        return (l + c + r) % 2;
+        return (l * c + l + r) % 2;
     }
     
     /**
