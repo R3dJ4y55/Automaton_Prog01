@@ -52,19 +52,11 @@ public class Automaton
         // based on the state of its two neighbors.
         for(int i = 0; i < state.length; i++) {
             int left, center, right;
-            if(i == 0) {
-                left = 0;
-            }
-            else {
-                left = state[i - 1];
-            }
+            // Set left to 0 if i is 0, and state[i - 1] is i isn't 0
+            left = (i == 0) ? 0 : state[i - 1];
             center = state[i];
-            if(i + 1 < state.length) {
-                right = state[i + 1];
-            }
-            else {
-                right = 0;
-            }
+            // Set right to state[i+1] if (i+1 < state.length) or 0 if i+1 > state.length
+            right = (i + 1 < state.length) ? state[i + 1] : 0;
             nextState[i] = (left + center + right) % 2;
         }
         state = nextState;
@@ -77,6 +69,7 @@ public class Automaton
     {
         Arrays.fill(state, 0);
         // Seed the automaton with a single 'on' cell.
-        state[numberOfCells / 2] = 1;
+        state[numberOfCells / 3] = 1;
+        state[2*(numberOfCells / 3)] = 1;
     }
 }
