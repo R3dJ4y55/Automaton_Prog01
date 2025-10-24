@@ -57,7 +57,7 @@ public class Automaton
             center = state[i];
             // Set right to state[i+1] if (i+1 < state.length) or 0 if i+1 > state.length
             right = (i + 1 < state.length) ? state[i + 1] : 0;
-            nextState[i] = (left + center + right) % 2;
+            state[i] = (left + center + right) % 2;
         }
         state = nextState;
     }

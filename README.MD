@@ -10,3 +10,5 @@ Q27: The same pattern does emerge every time.
 Q28: It remplaces all cells in state with 0.
 
 Q29: Yes. The patterns are deterministic.
+
+Q31: Because if we use values from state[] to change the values of state[], we will ,odify the source and it won't work.
