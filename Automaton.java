@@ -37,7 +37,7 @@ public class Automaton
         // Initialize array to store binary values for converting the wolframCode
         int[] bits = new int[8];
         for (int i = 0; i < 8; i++){
-            bits[i] = 0;
+            bits[i] = 0;                // I did this to solve an error where line 62 was getting a divide by 0 error, it didn't work so I changed 2^2 to 4 as seen in the code below. Now it works
         }
         
         // Divide wolframCode by powers of 2 and store them in an array
