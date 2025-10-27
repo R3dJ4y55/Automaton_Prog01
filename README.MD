@@ -16,8 +16,9 @@ Q31: Because if we use values from state[] to change the values of state[], we w
 Q32: I believe the solution is better. It uses less memory.
 
 Q35: To simplify the problem, let's start by considering multiplication between two of the variables.
-Due to the % 2, adding a variable to itself will result in 0. This means we have 3 possible combinations that can possibly affect the equation (not add or multiply by 0):
-    * left + right
+Due to the % 2, adding a variable to itself will result in 0. This means we have 3 possible combinations that can possibly affect the equation (not add or multiply by 0):  
+  
+  * left + right
     * left + center
     * right + center
 
@@ -28,3 +29,7 @@ Multiplying by 0 will set the value to zero.
 
 Seeing as left starts with the value 0, multiplying by left will return 0.  
 Therefore, we need only consider center * right.
+
+Due to the limited possiblilities,
+ if we combine multiplication and addition,
+ we should still have a finite number of possibilities.
