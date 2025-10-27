@@ -33,3 +33,10 @@ Therefore, we need only consider center * right.
 Due to the limited possiblilities,
  if we combine multiplication and addition,
  we should still have a finite number of possibilities.
+
+ 
+ ---
+ ### Q38
+ 
+ I though Q38 was in automaton v1, so I wrote the code to convert a Wolfram code to binary here. But, I though we had to fill the state[] array with the binary values.
+ If I were to do the automaton v4, I would use the same code, but instead of filling the binary values into state[] I would do it for tableState[]
