@@ -13,15 +13,15 @@ public class AutomatonController
      * Create an AutomatonController.
      * @param numberOfCells The number of cells in the automaton.
      */
-    public AutomatonController(int numberOfCells)
+    public AutomatonController(int wolframCode)
     {
-        auto = new Automaton(numberOfCells);
+        auto = new Automaton(wolframCode);
         auto.print();
     }
     
     /**
      * Create an AutomatonController with
-     * a default number of cells.
+     * a default Wolfram code.
      */
     public AutomatonController()
     {

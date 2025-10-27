@@ -18,7 +18,7 @@ Q32: I believe the solution is better. It uses less memory.
 Q35: To simplify the problem, let's start by considering multiplication between two of the variables.
 Due to the % 2, adding a variable to itself will result in 0. This means we have 3 possible combinations that can possibly affect the equation (not add or multiply by 0):  
   
-  * left + right
+    * left + right
     * left + center
     * right + center
 
